@@ -1,0 +1,12 @@
+name: Greeting
+
+on:
+  push:
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Вывод приветствия
+        run: echo "Привет! Workflow запущен по push."
